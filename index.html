@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rey dan Suara Rakyat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Rey dan Suara Rakyat</h1>
+            <p>Menampung Aspirasi, Menyuarakan Kebenaran</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Suara Rakyat</a></li>
+                <li><a href="#">Artikel & Opini</a></li>
+                <li><a href="#">Berita Terkini</a></li>
+                <li><a href="#">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Suara Rakyat Untuk Perubahan</h2>
+            <p>Tempat berbicara, berdiskusi, dan bertindak untuk kebaikan bersama.</p>
+        </div>
+    </section>
+
+    <!-- Filter Berita Section -->
+    <section class="filter-section">
+        <h2>Filter Berita</h2>
+        <div class="filters">
+            <button class="btn-filter" data-filter="politics">Politik</button>
+            <button class="btn-filter" data-filter="education">Pendidikan</button>
+            <button class="btn-filter" data-filter="health">Kesehatan</button>
+        </div>
+    </section>
+
+    <!-- Suara Rakyat Section -->
+    <section class="suara-rakyat">
+        <h2>Suara Rakyat Terbaru</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Isu Pendidikan di Daerah Terpencil</h3>
+                <p>Rakyat menginginkan akses pendidikan yang lebih merata di seluruh wilayah.</p>
+                <a href="#" class="btn-read-more">Baca Selengkapnya</a>
+            </div>
+            <div class="card">
+                <h3>Peningkatan Infrastruktur di Desa</h3>
+                <p>Pembangunan jalan dan akses transportasi yang lebih baik menjadi prioritas rakyat.</p>
+                <a href="#" class="btn-read-more">Baca Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Suara Rakyat -->
+    <section class="formulir">
+        <h2>Berikan Suara Anda</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Nama Anda" required>
+            <textarea placeholder="Sampaikan Suara Anda" required></textarea>
+            <button type="submit" class="btn-submit">Kirim Suara</button>
+        </form>
+    </section>
+
+    <!-- Peta Interaktif -->
+    <section class="peta">
+        <h2>Peta Suara Rakyat</h2>
+        <div id="map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rey dan Suara Rakyat. Semua hak cipta dilindungi.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

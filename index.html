@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transformasi Demokrasi Indonesia: Analisis Mendalam</title>
-    
-    <!-- HTTPS External Resources -->
+    <title>Transformasi Demokrasi Indonesia</title>
+
+    <!-- External Resources -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -17,82 +17,64 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.7;
+            font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+            line-height: 1.6;
             color: var(--text-color);
-            background-color: #f4f6f9;
+            background-color: #f9f9f9;
         }
 
-        .article-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://source.unsplash.com/1600x900/?indonesia,politics');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://source.unsplash.com/1600x900/?indonesia,politics') center/cover;
+            color: #fff;
+            padding: 80px 0;
             text-align: center;
         }
 
-        .article-content {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-top: -50px;
+        .content-wrapper {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-top: -40px;
             position: relative;
-            z-index: 10;
         }
 
-        .author-section {
+        .author-box {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
-            background-color: #f8f9fa;
             padding: 15px;
+            background-color: #f1f1f1;
             border-radius: 8px;
         }
 
-        .author-avatar {
-            width: 80px;
-            height: 80px;
+        .author-box img {
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            margin-right: 20px;
-            object-fit: cover;
+            margin-right: 15px;
         }
 
-        .multimedia-gallery {
+        .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
-            margin: 30px 0;
-        }
-
-        .multimedia-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .multimedia-item img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .multimedia-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .interactive-data {
-            background-color: #e9ecef;
-            padding: 20px;
-            border-radius: 10px;
             margin: 20px 0;
         }
 
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
         .timeline {
-            border-left: 4px solid var(--secondary-color);
+            border-left: 3px solid var(--secondary-color);
             padding-left: 20px;
         }
 
@@ -104,479 +86,70 @@
         .timeline-item::before {
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 12px;
+            height: 12px;
             background-color: var(--secondary-color);
             border-radius: 50%;
-            left: -32px;
+            left: -30px;
             top: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <!-- Hero Section -->
-        <div class="article-hero">
-            <div class="container">
-                <h1>Transformasi Demokrasi Indonesia: Tantangan dan Peluang</h1>
-                <p class="lead">Analisis Komprehensif tentang Dinamika Politik Kontemporer</p>
-            </div>
-        </div>
-
+    <header class="hero-section">
         <div class="container">
-            <div class="article-content">
-                <!-- Penulis -->
-                <div class="author-section">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" 
-                         alt="Penulis" 
-                         class="author-avatar">
-                    <div
-                    </div>
-                </div>
-
-                <!-- Multimedia Gallery -->
-                <div class="multimedia-gallery">
-                    <div class="multimedia-item">
-                        <img src="https://source.unsplash.com/400x250/?indonesia,democracy" alt="Demokrasi 1">
-                    </div>
-                    <div class="multimedia-item">
-                        <img src="https://source.unsplash.com/400x250/?indonesia,politics" alt="Politik Indonesia">
-                    </div>
-                    <div class="multimedia-item">
-                        <img src="https://source.unsplash.com/400x250/?indonesia,election" alt="Pemilihan Umum">
-                    </div>
-                </div>
-
-                <!-- Konten Artikel -->
-                <div class="article-text">
-                    <h2>Pendahuluan: Dinamika Demokrasi Kontemporer</h2>
-                    <p>Demokrasi Indonesia terus mengalami transformasi fundamental sejak era reformasi...</p>
-                </div>
-
-                <!-- Data Interaktif -->
-                <div class="interactive-data">
-                    <h3>Indikator Demokrasi Indonesia</h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h5>Partisipasi Pemilih</h5>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 78%;">78%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Kepercayaan Publik</h5>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 62%;">62%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Transparansi Pemerintah</h5>
-                            <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 55%;">55%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Timeline Sejarah -->
-                <div class="timeline-section">
-                    <h3>Milestone Demokrasi Indonesia</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <h4>1998: Reformasi</h4>
-                            <p>Runtuhnya Rezim Orde Baru dan Awal Demokratisasi</p>
-                        </div>
-                        <div class="timeline-item">
-                            <h4>2004: Pemilihan Presiden Langsung</h4>
-                            <p>Tonggak Sejarah Demokrasi Prosedural</p>
-                        </div>
-                        <div class="timeline-item">
-                            <h4>2019: Pemilu Presiden dan Legislatif</h4>
-                            <p>Pemilu yang paling kompleks dalam sejarah Indonesia dengan partisipasi yang tinggi</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Penutup -->
-                <div class="article-footer">
-                    <h3>Kesimpulan</h3>
-                    <p>Transformasi demokrasi di Indonesia menunjukkan kemajuan yang signifikan, namun tantangan tetap ada. Penting untuk terus mendorong partisipasi publik dan transparansi dalam pemerintahan untuk memastikan demokrasi yang sehat dan berkelanjutan.</p>
-                </div>
-            </div>
+            <h1>Transformasi Demokrasi Indonesia</h1>
+            <p class="lead">Membedah Tantangan dan Peluang Masa Depan</p>
         </div>
-    </div>
+    </header>
 
-    <!-- JavaScript -->
+    <main class="container">
+        <div class="content-wrapper">
+            <section class="author-box">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto Penulis">
+                <div>
+                    <h5>Oleh: Jurnal Politik Indonesia</h5>
+                    <p class="text-muted">Dipublikasikan pada 2 Januari 2025</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Pendahuluan</h2>
+                <p>Perjalanan demokrasi Indonesia tidaklah mudah. Sejak reformasi 1998, berbagai perubahan telah membawa Indonesia ke arah yang lebih baik, meskipun masih banyak tantangan yang harus dihadapi.</p>
+            </section>
+
+            <section class="gallery">
+                <img src="https://source.unsplash.com/400x250/?indonesia,democracy" alt="Demokrasi Indonesia">
+                <img src="https://source.unsplash.com/400x250/?indonesia,politics" alt="Politik">
+                <img src="https://source.unsplash.com/400x250/?indonesia,election" alt="Pemilu">
+            </section>
+
+            <section>
+                <h2>Perkembangan dan Tantangan</h2>
+                <p>Seiring berjalannya waktu, demokrasi Indonesia telah menunjukkan banyak kemajuan, seperti peningkatan partisipasi masyarakat dalam pemilu. Namun, ancaman korupsi dan polarisasi politik masih menjadi penghambat utama.</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h5>1998 - Reformasi</h5>
+                        <p>Dimulainya era reformasi setelah berakhirnya Orde Baru.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>2004 - Pemilu Langsung</h5>
+                        <p>Indonesia melaksanakan pemilihan umum langsung pertama untuk memilih presiden.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>2024 - Pemilu Digital</h5>
+                        <p>Pemilu berbasis digital mulai diterapkan untuk meningkatkan transparansi.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Jurnal Politik Indonesia. Semua Hak Dilindungi.</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html> ```html
-                <!-- Gambar Tambahan -->
-                <div class="additional-images">
-                    <h3>Gambar Terkait</h3>
-                    <div class="multimedia-gallery">
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,protest" alt="Protes Demokrasi">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,government" alt="Pemerintahan Indonesia">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,people" alt="Partisipasi Rakyat">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Komentar Pembaca -->
-                <div class="comments-section">
-                    <h3>Komentar Pembaca</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Tinggalkan Komentar Anda</label>
-                            <textarea class="form-control" id="comment" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Komentar</button>
-                    </form>
-                    <div class="comments-list mt-4">
-                        <div class="comment-item">
-                            <h5>Andi Setiawan</h5>
-                            <p>Saya setuju bahwa partisipasi publik sangat penting untuk demokrasi yang sehat.</p>
-                        </div>
-                        <div class="comment-item">
-                            <h5>Siti Nurhaliza</h5>
-                            <p>Artikel ini memberikan wawasan yang sangat baik tentang tantangan yang dihadapi demokrasi kita.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sumber Referensi -->
-                <div class="references-section">
-                    <h3>Sumber Referensi</h3>
-                    <ul>
-                        <li><a href="https://www.bbc.com/indonesia" target="_blank">BBC Indonesia</a></li>
-                        <li><a href="https://www.reuters.com/places/indonesia" target="_blank">Reuters Indonesia</a></li>
-                        <li><a href="https://www.thejakartapost.com/" target="_blank">The Jakarta Post</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-``` ```html
-                <!-- Gambar Tambahan -->
-                <div class="additional-images">
-                    <h3>Gambar Terkait</h3>
-                    <div class="multimedia-gallery">
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,protest" alt="Protes Demokrasi">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,government" alt="Pemerintahan Indonesia">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,people" alt="Partisipasi Rakyat">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Komentar Pembaca -->
-                <div class="comments-section">
-                    <h3>Komentar Pembaca</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Tinggalkan Komentar Anda</label>
-                            <textarea class="form-control" id="comment" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Komentar</button>
-                    </form>
-                    <div class="comments-list mt-4">
-                        <div class="comment-item">
-                            <h5>Andi Setiawan</h5>
-                            <p>Saya setuju bahwa partisipasi publik sangat penting untuk demokrasi yang sehat.</p>
-                        </div>
-                        <div class="comment-item">
-                            <h5>Siti Nurhaliza</h5>
-                            <p>Artikel ini memberikan wawasan yang sangat baik tentang tantangan yang dihadapi demokrasi kita.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sumber Referensi -->
-                <div class="references-section">
-                    <h3>Sumber Referensi</h3>
-                    <ul>
-                        <li><a href="https://www.bbc.com/indonesia" target="_blank">BBC Indonesia</a></li>
-                        <li><a href="https://www.reuters.com/places/indonesia" target="_blank">Reuters Indonesia</a></li>
-                        <li><a href="https://www.thejakartapost.com/" target="_blank">The Jakarta Post</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-``` ```html
-                <!-- Gambar Tambahan -->
-                <div class="additional-images">
-                    <h3>Gambar Terkait</h3>
-                    <div class="multimedia-gallery">
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,protest" alt="Protes Demokrasi">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,government" alt="Pemerintahan Indonesia">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,people" alt="Partisipasi Rakyat">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Komentar Pembaca -->
-                <div class="comments-section">
-                    <h3>Komentar Pembaca</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Tinggalkan Komentar Anda</label>
-                            <textarea class="form-control" id="comment" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Komentar</button>
-                    </form>
-                    <div class="comments-list mt-4">
-                        <div class="comment-item">
-                            <h5>Andi Setiawan</h5>
-                            <p>Saya setuju bahwa partisipasi publik sangat penting untuk demokrasi yang sehat.</p>
-                        </div>
-                        <div class="comment-item">
-                            <h5>Siti Nurhaliza</h5>
-                            <p>Artikel ini memberikan wawasan yang sangat baik tentang tantangan yang dihadapi demokrasi kita.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sumber Referensi -->
-                <div class="references-section">
-                    <h3>Sumber Referensi</h3>
-                    <ul>
-                        <li><a href="https://www.bbc.com/indonesia" target="_blank">BBC Indonesia</a></li>
-                        <li><a href="https://www.reuters.com/places/indonesia" target="_blank">Reuters Indonesia</a></li>
-                        <li><a href="https://www.thejakartapost.com/" target="_blank">The Jakarta Post</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-``` ```html
-                <!-- Gambar Tambahan -->
-                <div class="additional-images">
-                    <h3>Gambar Terkait</h3>
-                    <div class="multimedia-gallery">
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,protest" alt="Protes Demokrasi">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,government" alt="Pemerintahan Indonesia">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,people" alt="Partisipasi Rakyat">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Komentar Pembaca -->
-                <div class="comments-section">
-                    <h3>Komentar Pembaca</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Tinggalkan Komentar Anda</label>
-                            <textarea class="form-control" id="comment" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Komentar</button>
-                    </form>
-                    <div class="comments-list mt-4">
-                        <div class="comment-item">
-                            <h5>Andi Setiawan</h5>
-                            <p>Saya setuju bahwa partisipasi publik sangat penting untuk demokrasi yang sehat.</p>
-                        </div>
-                        <div class="comment-item">
-                            <h5>Siti Nurhaliza</h5>
-                            <p>Artikel ini memberikan wawasan yang sangat baik tentang tantangan yang dihadapi demokrasi kita.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sumber Referensi -->
-                <div class="references-section">
-                    <h3>Sumber Referensi</h3>
-                    <ul>
-                        <li><a href="https://www.bbc.com/indonesia" target="_blank">BBC Indonesia</a></li>
-                        <li><a href="https://www.reuters.com/places/indonesia" target="_blank">Reuters Indonesia</a></li>
-                        <li><a href="https://www.thejakartapost.com/" target="_blank">The Jakarta Post</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-``` ```html
-                <!-- Gambar Tambahan -->
-                <div class="additional-images">
-                    <h3>Gambar Terkait</h3>
-                    <div class="multimedia-gallery">
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,protest" alt="Protes Demokrasi">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,government" alt="Pemerintahan Indonesia">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,people" alt="Partisipasi Rakyat">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Komentar Pembaca -->
-                <div class="comments-section">
-                    <h3>Komentar Pembaca</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Tinggalkan Komentar Anda</label>
-                            <textarea class="form-control" id="comment" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Komentar</button>
-                    </form>
-                    <div class="comments-list mt-4">
-                        <div class="comment-item">
-                            <h5>Andi Setiawan</h5>
-                            <p>Saya setuju bahwa partisipasi publik sangat penting untuk demokrasi yang sehat.</p>
-                        </div>
-                        <div class="comment-item">
-                            <h5>Siti Nurhaliza</h5>
-                            <p>Artikel ini memberikan wawasan yang sangat baik tentang tantangan yang dihadapi demokrasi kita.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sumber Referensi -->
-                <div class="references-section">
-                    <h3>Sumber Referensi</h3>
-                    <ul>
-                        <li><a href="https://www.bbc.com/indonesia" target="_blank">BBC Indonesia</a></li>
-                        <li><a href="https://www.reuters.com/places/indonesia" target="_blank">Reuters Indonesia</a></li>
-                        <li><a href="https://www.thejakartapost.com/" target="_blank">The Jakarta Post</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-``` ```html
-                <!-- Gambar Tambahan -->
-                <div class="additional-images">
-                    <h3>Gambar Terkait</h3>
-                    <div class="multimedia-gallery">
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,protest" alt="Protes Demokrasi">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,government" alt="Pemerintahan Indonesia">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,people" alt="Partisipasi Rakyat">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Komentar Pembaca -->
-                <div class="comments-section">
-                    <h3>Komentar Pembaca</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Tinggalkan Komentar Anda</label>
-                            <textarea class="form-control" id="comment" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Komentar</button>
-                    </form>
-                    <div class="comments-list mt-4">
-                        <div class="comment-item">
-                            <h5>Andi Setiawan</h5>
-                            <p>Saya setuju bahwa partisipasi publik sangat penting untuk demokrasi yang sehat.</p>
-                        </div>
-                        <div class="comment-item">
-                            <h5>Siti Nurhaliza</h5>
-                            <p>Artikel ini memberikan wawasan yang sangat baik tentang tantangan yang dihadapi demokrasi kita.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sumber Referensi -->
-                <div class="references-section">
-                    <h3>Sumber Referensi</h3>
-                    <ul>
-                        <li><a href="https://www.bbc.com/indonesia" target="_blank">BBC Indonesia</a></li>
-                        <li><a href="https://www.reuters.com/places/indonesia" target="_blank">Reuters Indonesia</a></li>
-                        <li><a href="https://www.thejakartapost.com/" target="_blank">The Jakarta Post</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-``` ```html
-                <!-- Gambar Tambahan -->
-                <div class="additional-images">
-                    <h3>Gambar Terkait</h3>
-                    <div class="multimedia-gallery">
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,protest" alt="Protes Demokrasi">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,government" alt="Pemerintahan Indonesia">
-                        </div>
-                        <div class="multimedia-item">
-                            <img src="https://source.unsplash.com/400x250/?indonesia,people" alt="Partisipasi Rakyat">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Komentar Pembaca -->
-                <div class="comments-section">
-                    <h3>Komentar Pembaca</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Tinggalkan Komentar Anda</label>
-                            <textarea class="form-control" id="comment" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Komentar</button>
-                    </form>
-                    <div class="comments-list mt-4">
-                        <div class="comment-item">
-                            <h5>Andi Setiawan</h5>
-                            <p>Saya setuju bahwa partisipasi publik sangat penting untuk demokrasi yang sehat.</p>
-                        </div>
-                        <div class="comment-item">
-                            <h5>Siti Nurhaliza</h5>
-                            <p>Artikel ini memberikan wawasan yang sangat baik tentang tantangan yang dihadapi demokrasi kita.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sumber Referensi -->
-                <div class="references-section">
-                    <h3>Sumber Referensi</h3>
-                    <ul>
-                        <li><a href="https://www.bbc.com/indonesia" target="_blank">BBC Indonesia</a></li>
-                        <li><a href="https://www.reuters.com/places/indonesia" target="_blank">Reuters Indonesia</a></li>
-                        <li><a href="https://www.thejakartapost.com/" target="_blank">The Jakarta Post</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transformasi Demokrasi Indonesia</title>
+    <title>Berita Indonesia - Transformasi Demokrasi</title>
 
     <!-- External Resources -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +38,14 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             margin-top: -40px;
             position: relative;
+        }
+
+        .article-index {
+            margin-top: 20px;
+        }
+
+        .article-index .card {
+            margin-bottom: 20px;
         }
 
         .author-box {
@@ -94,30 +102,64 @@
             top: 0;
         }
 
-        .key-points {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-        }
-
-        .key-points li {
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #eef;
-            border-left: 4px solid var(--secondary-color);
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header class="hero-section">
         <div class="container">
-            <h1>Transformasi Demokrasi Indonesia</h1>
-            <p class="lead">Membedah Tantangan dan Peluang Masa Depan</p>
+            <h1>Berita Indonesia</h1>
+            <p class="lead">Berita Terkini, Terpercaya, dan Informatif</p>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main class="container">
-        <div class="content-wrapper">
+        <!-- Article Index -->
+        <section class="article-index">
+            <h2>Berita Utama</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/400x250/?indonesia,democracy" class="card-img-top" alt="Transformasi Demokrasi">
+                        <div class="card-body">
+                            <h5 class="card-title">Transformasi Demokrasi Indonesia</h5>
+                            <p class="card-text">Membedah tantangan dan peluang masa depan demokrasi di Indonesia.</p>
+                            <a href="#artikel-1" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/400x250/?indonesia,economy" class="card-img-top" alt="Tantangan Ekonomi">
+                        <div class="card-body">
+                            <h5 class="card-title">Tantangan Ekonomi Global</h5>
+                            <p class="card-text">Bagaimana Indonesia menghadapi gejolak ekonomi dunia.</p>
+                            <a href="#artikel-2" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/400x250/?indonesia,technology" class="card-img-top" alt="Teknologi Pemilu">
+                        <div class="card-body">
+                            <h5 class="card-title">Teknologi dalam Pemilu</h5>
+                            <p class="card-text">Penerapan teknologi digital dalam meningkatkan transparansi pemilu.</p>
+                            <a href="#artikel-3" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section id="artikel-1" class="content-wrapper mt-5">
             <section class="author-box">
                 <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto Penulis">
                 <div>
@@ -127,9 +169,8 @@
             </section>
 
             <section>
-                <h2>Pendahuluan</h2>
+                <h2>Transformasi Demokrasi Indonesia</h2>
                 <p>Perjalanan demokrasi Indonesia tidaklah mudah. Sejak reformasi 1998, berbagai perubahan telah membawa Indonesia ke arah yang lebih baik, meskipun masih banyak tantangan yang harus dihadapi.</p>
-                <p>Artikel ini akan mengupas lebih dalam mengenai perkembangan demokrasi, tantangan yang masih ada, serta langkah-langkah strategis untuk masa depan yang lebih cerah.</p>
             </section>
 
             <section class="gallery">
@@ -140,13 +181,7 @@
 
             <section>
                 <h2>Perkembangan dan Tantangan</h2>
-                <p>Seiring berjalannya waktu, demokrasi Indonesia telah menunjukkan banyak kemajuan, seperti peningkatan partisipasi masyarakat dalam pemilu. Namun, ancaman korupsi, polarisasi politik, dan tantangan ekonomi masih menjadi penghambat utama.</p>
-
-                <ul class="key-points">
-                    <li>Peningkatan partisipasi pemilih dalam pemilu 2024 menjadi salah satu indikator positif.</li>
-                    <li>Korupsi di sektor publik masih menjadi tantangan yang memerlukan perhatian serius.</li>
-                    <li>Polarisasi politik yang diperparah oleh disinformasi di media sosial semakin menekan harmoni sosial.</li>
-                </ul>
+                <p>Seiring berjalannya waktu, demokrasi Indonesia telah menunjukkan banyak kemajuan, seperti peningkatan partisipasi masyarakat dalam pemilu. Namun, ancaman korupsi dan polarisasi politik masih menjadi penghambat utama.</p>
 
                 <div class="timeline">
                     <div class="timeline-item">
@@ -163,15 +198,11 @@
                     </div>
                 </div>
             </section>
-
-            <section>
-                <h2>Kesimpulan</h2>
-                <p>Demokrasi Indonesia adalah hasil dari perjuangan panjang yang masih berlanjut hingga saat ini. Dengan komitmen kuat dari semua pihak, Indonesia dapat menghadapi tantangan dan memanfaatkan peluang untuk menjadi negara yang lebih maju, demokratis, dan inklusif.</p>
-            </section>
-        </div>
+        </section>
     </main>
 
-    <footer class="text-center py-4">
+    <!-- Footer -->
+    <footer>
         <p>&copy; 2025 Jurnal Politik Indonesia. Semua Hak Dilindungi.</p>
     </footer>
 
